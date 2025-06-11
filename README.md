@@ -1,8 +1,9 @@
 # 🔐 TextWatermarking MCP Server
 
-[![npm version](https://badge.fury.io/js/%40textwatermarking%2Fmcp-server.svg)](https://badge.fury.io/js/%40textwatermarking%2Fmcp-server)
+[![npm version](https://img.shields.io/npm/v/@textwatermarking/mcp-server.svg)](https://www.npmjs.com/package/@textwatermarking/mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/npm/dt/%40textwatermarking%2Fmcp-server.svg)](https://www.npmjs.com/package/@textwatermarking/mcp-server)
+[![Downloads](https://img.shields.io/npm/dt/@textwatermarking/mcp-server.svg)](https://www.npmjs.com/package/@textwatermarking/mcp-server)
+[![Package Size](https://img.shields.io/bundlephobia/min/@textwatermarking/mcp-server.svg)](https://bundlephobia.com/result?p=@textwatermarking/mcp-server)
 
 A Unicode-based text watermarking MCP (Model Context Protocol) server that embeds invisible watermarks using variation selectors. Perfect for AI applications, content protection, and text authentication.
 
@@ -127,18 +128,29 @@ npm install @textwatermarking/mcp-server
 #### Step 3: Configure the Token
 Once you have your API token, configure it using one of these methods:
 
-#### Method 1: Command Line (Recommended for Cursor)
+#### Method 1: Environment File (Recommended for Development)
+```bash
+# Copy the template and add your token
+cp env.template .env
+# Edit .env and replace 'your_api_token_here' with your actual token
+vi .env
+
+# Then run the server
+watermark-mcp
+```
+
+#### Method 2: Command Line (Recommended for Cursor)
 ```bash
 watermark-mcp --token YOUR_API_TOKEN
 ```
 
-#### Method 2: Environment Variable
+#### Method 3: Environment Variable
 ```bash
 export USER_API_TOKEN="YOUR_API_TOKEN"
 watermark-mcp
 ```
 
-#### Method 3: Cursor MCP Configuration
+#### Method 4: Cursor MCP Configuration
 ```json
 {
   "mcpServers": {
@@ -149,6 +161,8 @@ watermark-mcp
   }
 }
 ```
+
+**🔒 Security Note**: Never commit your `.env` file or hardcode tokens in your code. The package includes `env.template` as a starting point.
 
 ### Available Options
 
