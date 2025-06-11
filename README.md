@@ -112,7 +112,7 @@ watermark-mcp [options]
 
 Options:
   --token, -t <token>    API token for authentication
-  --api-url, -u <url>    API base URL (default: https://api.textwatermarking.com)
+  --api-url, -u <url>    API base URL (default: https://textwatermarking.com/docs/overview.html)
   --help, -h             Show help message
 ```
 
@@ -220,13 +220,13 @@ Extracts robust watermarks.
 
 - **Main Repository**: [TextWatermarking System](https://github.com/textwatermarking/watermark-system) - Full project with web interface, API, and documentation
 - **WebAssembly Core**: Part of the main repository - Rust-based watermarking engine
-- **API Documentation**: [https://api.textwatermarking.com](https://api.textwatermarking.com)
+- **API Documentation**: [https://textwatermarking.com/docs/overview.html](https://textwatermarking.com/docs/overview.html)
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-For major changes or questions about the overall system, visit the [main repository](https://github.com/textwatermarking/watermark-system).
+For major changes or questions about the overall system, do not hesistate to open [Issues](https://github.com/XappNova/textwatermarking/issues) :)
 
 ## 📄 License
 
@@ -235,9 +235,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🔗 Links
 
 - **NPM Package**: [@textwatermarking/mcp-server](https://www.npmjs.com/package/@textwatermarking/mcp-server)
-- **API Documentation**: [https://api.textwatermarking.com](https://api.textwatermarking.com)
+- **API Documentation**: [https://textwatermarking.com/docs/overview.html](https://textwatermarking.com/docs/overview.html)
 - **Support**: [support@textwatermarking.com](mailto:support@textwatermarking.com)
-- **Issues**: [GitHub Issues](https://github.com/textwatermarking/mcp-server/issues)
+- **Issues**: [GitHub Issues](https://github.com/XappNova/textwatermarking/issues)
 
 ## ⭐ Show Your Support
 
