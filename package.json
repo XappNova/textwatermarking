@@ -1,0 +1,77 @@
+{
+  "name": "@textwatermarking/mcp-server",
+  "version": "1.0.0",
+  "description": "A Unicode-based text watermarking MCP server that embeds invisible watermarks using variation selectors. Ready for use with Cursor AI and other MCP clients.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "watermark-mcp": "bin/cli.js",
+    "text-watermark-mcp": "bin/cli.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node test-comprehensive.js",
+    "test:comprehensive": "node test-comprehensive.js",
+    "prepublishOnly": "npm run build && npm run test:comprehensive",
+    "lint": "echo 'No linting configured'",
+    "clean": "rm -rf dist",
+    "validate": "npm run build && npm run test && npm pack --dry-run"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "typescript",
+    "watermarking",
+    "text-watermarking",
+    "unicode",
+    "variation-selectors",
+    "invisible-watermark",
+    "cursor",
+    "cursor-ai",
+    "npx",
+    "cli",
+    "steganography",
+    "text-security",
+    "api"
+  ],
+  "author": {
+    "name": "TextWatermarking Team",
+    "email": "support@textwatermarking.com",
+    "url": "https://api.textwatermarking.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/textwatermarking/mcp-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/textwatermarking/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/textwatermarking/mcp-server/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "zod": "^3.25.32"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.24",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
