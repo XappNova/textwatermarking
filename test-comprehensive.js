@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Test configuration
-const TEST_TOKEN = '5b0e73cffb62ed2261e389be252f5a722247ec5df2943e39382165192d121eed';
+const TEST_TOKEN = process.env.USER_API_TOKEN || '{YOUR-API-TOKEN}';
 const TEST_TIMEOUT = 15000; // 15 seconds
 
 // Test results tracking
